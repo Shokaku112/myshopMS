@@ -5,6 +5,9 @@ import elmentui from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'bootstrap'
 import jq from 'jquery'
+import echarts from 'echarts'
+Vue.use(echarts)
+Vue.prototype.$echarts = echarts;
 
 Vue.config.productionTip = false
 Vue.use(elmentui)

@@ -2,9 +2,9 @@
 
 const fs = require('fs')
 const path = require('path')
-const bodyParser = require('body-parser')
+const bodyParser=require('body-parser')
 const express = require('express')
-const UserApi=require('./UserApi')
+const UserApi=require('./Shop.js')
 
 // const {Sequelize}=require('sequelize');
 // const sequelize = new Sequelize('clientlog', 'root', '123456', {
@@ -52,12 +52,14 @@ app.all("*", function (req, res, next) {
 // }));
 
 // 后端api路由
-
-app.use('/user', UserApi)
-//第一个参数为路由路径，第二个为使用的路由对象
-
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+//用于解析post请求的body,必须写在路由之前！！！！！！！
+app.use('/admin', UserApi)
+//第一个参数为路由路径，第二个为使用的路由对象
+
+
+
 // 后端api路由
 
 
