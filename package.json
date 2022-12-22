@@ -17,7 +17,7 @@
     "element-ui": "^2.13.0",
     "eslint-plugin-compat": "^3.8.0",
     "file-saver": "^2.0.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "less": "^3.11.1",
     "live2d-widget": "latest",
     "live2d-widget-model-chitose": "latest",
